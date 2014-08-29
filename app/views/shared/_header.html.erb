@@ -1,0 +1,12 @@
+<div id="header">
+  <div id="left_nav">
+    <h1>The Wall</h1>
+  </div>
+  <div id="right_nav">
+    <% if logged_in? %>
+    <%= puts 'logged_in?',logged_in? %>
+      <p>Welcome <%= @user.first_name %>!<%=  %></p>
+      <%= link_to 'Sign Out', signout_path %>
+    <% end %>
+  </div>
+</div>

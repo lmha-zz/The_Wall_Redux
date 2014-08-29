@@ -1,0 +1,8 @@
+<% if message.comments.any? %>
+  <% message.comments.each do |comment| %>
+    <div class="comment_wrapper">
+      <p class="comment_author"><%= comment.user.first_name %> - <%= comment.created_at.strftime('%B %d, %Y') %></p>
+      <p class="comment"><%= comment.comment %></p>
+    </div>
+  <% end %>
+<% end %>

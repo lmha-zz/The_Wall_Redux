@@ -1,0 +1,88 @@
+// Place all the styles related to the Users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+* {
+	font-family: arial;
+}
+body {
+	margin: 0 auto;
+}
+h2 {
+	margin-left: 3%;
+	margin-right: 3%;
+}
+.error {
+	color: red;
+}
+.errors {
+	color:red;
+}
+.message_wrapper {
+	.comment_wrapper, .comment_form {
+		width: 95%;
+		margin: 10px 0 10px auto;
+	}
+	.comment_form {
+			text-align: right;
+		textarea {
+			width: 99.5%;
+			border:1px solid black;
+			height: 35px;
+			resize: none;
+			margin: 10px 0;
+		}
+	}
+	width: 90%;
+	padding: 10px 20px;
+	margin: 20px auto;
+}
+.message_author {
+	font-weight: bold;
+}
+.comment_wrapper {
+	p {
+		font-size: 90%;
+		color: rgba(0,0,0, 0.6);
+	}
+}
+.comment_author {
+	font-weight: bold;
+}
+#header {
+	a, p {
+		display: inline;
+	}
+	p {
+		margin: 0 30px 0 0;
+	}
+	padding: 5px 30px;
+	border-bottom: 2px solid black;
+}
+#left_nav, #right_nav {
+	display: inline-block;
+	width: 49%;
+	vertical-align:middle;
+}
+#right_nav {
+	text-align: right;
+}
+#left_wrapper, #right_wrapper {
+	display:inline-block;
+	vertical-align: top;
+	width: 46%;
+}
+#left_wrapper {
+	margin: 0 3% 0 3%;
+}
+#message_form {
+	textarea {
+		border:1px solid black;
+		width: 100%;
+		height: 50px;
+		text-align: left;
+		resize:none;
+	}
+	width: 95%;
+	margin: 0 auto;
+	text-align: right;
+}

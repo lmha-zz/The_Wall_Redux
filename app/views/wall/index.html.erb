@@ -1,0 +1,19 @@
+<%= content_for :title do %>
+  The Wall
+<% end %>
+
+<h2>Post a Message</h2>
+
+<% if flash[:error] %>
+  <p class="error"><%= flash[:error] %></p>
+<% end %>
+
+<div id="message_form">
+  <%= form_for(@message) do |m| %>
+    <%= m.text_area :message %>
+    <%= m.submit 'Post a Message' %>
+  <% end %>
+</div>
+
+<!-- show messages -->
+<%= render partial: 'show_messages' %>

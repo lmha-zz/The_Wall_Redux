@@ -1,0 +1,6 @@
+<div class="comment_form">
+  <%= form_for([message, @comment]) do |c| %>
+    <%= c.text_area :comment %>
+    <%= c.submit 'Post a Comment' %>
+  <% end %>
+</div>
